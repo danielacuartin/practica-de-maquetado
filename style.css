@@ -1,0 +1,109 @@
+:root {
+    --color-principal: #acd9b2;
+    --color-fondo: white;
+    --color-tipografia-1: black;
+    --color-tipografia-2: #c7c7c7;
+    --color-formulario: #f7f7f7;
+  
+    --tamaño-mediano: 18px;
+    --width-elementos: 85%;
+    --height-elementos: 50px;
+    --tipografia-principal: "Quicksand", sans-serif;
+  }
+  body {
+    margin: 0;
+    background: var(--color-fondo);
+    font-family: var(--tipografia-principal);
+  }
+  
+  .contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px;
+    margin-top: 100px;
+  }
+  
+  /* etiqueta directa, mala idea */
+  .contenedor-imagen img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .contenedor-barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: var(--tamaño-mediano);
+    font-weight: 600;
+    align-self: flex-start;
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 7%;
+  }
+  
+  input {
+    width: var(--width-elementos);
+    height: 40px;
+    border-radius: 6px;
+    margin: 12px;
+    border: none;
+    padding-left: 10px;
+    font-size: var(--tamaño-mediano);
+    color: grey;
+    background: var(--color-formulario);
+  }
+  
+  .log-in {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-elementos);
+    height: var(--height-elementos);
+    background: var(--color-principal);
+    color: white;
+    font-size: var(--tamaño-mediano);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-radius: 8px;
+    margin: 12px;
+    margin-top: 20px;
+  }
+  .log-in:hover {
+    background: #2e3532;
+  }
+  
+  a {
+    color: var(--color-principal);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .sign-up {
+    background: white;
+    border-color: var(--color-principal);
+    width: var(--width-elementos);
+    height: var(--height-elementos);
+    color: var(--color-principal);
+    font-size: var(--tamaño-mediano);
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 12px;
+    border-width: 1px;
+    align-self: center;
+  }
+  
